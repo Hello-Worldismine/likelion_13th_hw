@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Django 2주차 세션 정리</title>
+    <style>
+        nav {
+            margin-bottom: 40px;
+        }
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #fef9f4;
+            font-family: 'Pretendard', sans-serif;
+            padding: 40px;
+            color: #333;
+        }
+
+
+        h1 {
+            color: #FF7A59;
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #444;
+            font-size: 24px;
+            margin-top: 30px;
+            border-bottom: 2px solid #FFB088;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+            list-style: square;
+            margin-top: 10px;
+        }
+
+        li {
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            background-color: #FF9364;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #ff7a59;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="/">📝 2주차 정리</a>
+        <a href="/choonsik/">🐾 춘식이 소개</a>
+    </nav>
+    <h1>🦁 Django 2주차 세션 정리</h1>
+
+    <h2>1. 개발 환경 준비</h2>
+    <ul>
+        <li>프로젝트 구조: <code>likelion_13th_session</code></li>
+        <li>터미널 명령어: <code>pipenv shell</code></li>
+        <li>장고 설치: <code>pip install django</code></li>
+        <li>가상 환경 관리: pipenv로 python 패키지 관리</li>
+    </ul>
+
+    <h2>2. 프로젝트 시작 흐름</h2>
+    <ul>
+        <li><code>django-admin startproject</code> → 프로젝트 생성</li>
+        <li><code>python manage.py startapp</code> → 앱 생성</li>
+        <li><code>settings.py</code>에서 앱 등록</li>
+        <li><code>views.py</code>에서 함수 작성</li>
+        <li><code>urls.py</code>에서 라우팅 설정</li>
+        <li><code>templates/</code>에서 HTML 파일 작성</li>
+    </ul>
+
+    <h2>3. HTML 템플릿 예시 구성</h2>
+    <ul>
+        <li>배경색: <code>#111</code>, 텍스트: <code>#fff</code></li>
+        <li>Navbar 구성: <code>display: flex</code>로 메뉴 정렬</li>
+        <li>context로 전달된 값 출력</li>
+    </ul>
+
+    <h2>4. context 전달 & render 사용</h2>
+    <ul>
+        <li>views.py에서 딕셔너리 형태로 데이터 전달</li>
+        <li><code>render(request, 'template.html', context)</code></li>
+        <li>HTML에서 <code>{{ key }}</code> 문법으로 출력</li>
+    </ul>
+
+    <a href="/choonsik/">🐾 춘식이 소개 페이지로 이동</a>
+</body>
+
+</html>
